@@ -1,0 +1,11 @@
+rabbitmq_cluster_master: vio-openstack3.njrar.tus.ams1907.com
+update_hosts: true
+rabbitmq_hosts: |
+  10.245.213.125 vio-openstack3.njrar.tus.ams1907.com
+  10.245.213.126 vio-openstack4.njrar.tus.ams1907.com
+enable_tls: false
+cert_dir: "{{ playbook_dir }}/../common_files/ssl"
+cacertfile: "{{ cert_dir }}/cacert.pem"
+certfile: "{{ cert_dir }}/cert.pem"
+keyfile: "{{ cert_dir }}/key.pem"
+backup_queues_in_two_nodes: true

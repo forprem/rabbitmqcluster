@@ -1,0 +1,6 @@
+---
+galaxy_info:
+  description: An ansible role for RabbitMQ cluster
+  min_ansible_version: 2.0
+  categories:
+  - clustering
